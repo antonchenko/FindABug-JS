@@ -1,0 +1,272 @@
+body {
+  background-image: url(./img/Background.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  font-weight: bold;
+  background-image: url(./img/cardMenu2.png), url(./img/cardMenu.png);
+  background-repeat: no-repeat;
+  background-position-x: 74%, 61%;
+  background-position-y: 95%, 90%;
+}
+
+.header {
+  padding: 5% 0% 0% 5%;
+}
+
+.header__title {
+  font-size: 57px;
+  line-height: 67px;
+  margin-bottom: 9px;
+}
+
+.header__subtitle {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+input:checked ~ label::after {
+  content: ' ';
+  transform: rotate(45deg);
+  position: absolute;
+  display: block;
+  left: -30px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #d62b2e;
+}
+
+.hidden {
+  display: none;
+}
+
+.choose-level {
+  padding: 2%;
+}
+
+.level {
+  width: 25%;
+  font-size: 42px;
+  margin: 2% 8%;
+}
+
+.button {
+  margin: 7% 6%;
+}
+
+.start-button {
+  cursor: pointer;
+  font-size: 31px;
+  line-height: 37px;
+  font-weight: bold;
+  color: #fff;
+  background: #d62b2e;
+  border-radius: 7px;
+  margin-left: 1px;
+  padding: 29px 83px 28px 82px;
+}
+
+label {
+  margin-left: 20px;
+  position: relative;
+}
+
+input {
+  display: none;
+}
+
+.card {
+  position: relative;
+  margin: 12px;
+}
+
+.field {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: transform 1s;
+  transform: translateY(-15px) rotate(-5deg);
+}
+
+.easy-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.middle-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hard-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    background-position-x: 90%, 75%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    background-position-y: 64%, 59%;
+  }
+
+  .choose-level {
+    padding-top: 4%;
+  }
+}
+
+@media (max-width: 1096px) {
+  .card__front {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__title {
+    font-size: 46px;
+  }
+
+  .header__subtitle {
+    font-size: 14px;
+  }
+
+  .level {
+    font-size: 36px;
+  }
+
+  .start-button {
+    font-size: 28px;
+    padding: 16px 40px 16px 32px;
+  }
+
+  .container {
+    background-position-y: 90%, 78%;
+    background-position-x: 93%, 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    background-image: none;
+    text-align: center;
+  }
+
+  .level {
+    text-align: center;
+    margin: 2% 35%;
+  }
+
+  .card__front {
+    width: 80%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 578px) {
+  .container {
+    background-image: none;
+    text-align: center;
+  }
+
+  .level {
+    text-align: center;
+    margin: 4% 32%;
+  }
+
+  .card__front {
+    width: 80%;
+    height: 90%;
+  }
+
+  .start-button {
+    font-size: 31px;
+    padding: 29px 83px 28px 82px;
+    margin: 3% 4%;
+  }
+
+  .button {
+    margin: 15% 0 0 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .card__front {
+    width: 80%;
+    height: 90%;
+  }
+
+  .field {
+    margin: 0%;
+  }
+
+  body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .header {
+    padding: 0;
+    margin-bottom: 5%;
+  }
+
+  .header__title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .header__subtitle {
+    font-size: 13px;
+    text-align: center;
+    margin: 5% 5%;
+  }
+
+  .container {
+    background-image: none;
+    text-align: center;
+  }
+
+  .level {
+    font-size: 36px;
+    text-align: center;
+    margin: 6% 25%;
+  }
+
+  .start-button {
+    font-size: 31px;
+    padding: 29px 83px 28px 82px;
+    margin: 3% 4%;
+  }
+
+  .button {
+    margin: 15% 0 0 0;
+  }
+
+  .card__front {
+    width: 90%;
+    height: 100%;
+  }
+}
